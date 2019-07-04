@@ -7,6 +7,12 @@ body {
     width: 1280px;
     margin: 0 auto;
     min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
 }
 
 header {
@@ -376,11 +382,12 @@ details[open] summary:before {
 }
 
 .contacts {
-    padding: 53px 246px 49px 249px;
+    padding: 50px;
     box-sizing: border-box;
     background-color: #445162;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .contacts h3 {
@@ -519,40 +526,16 @@ textarea[placeholder="Your message:"]:focus {
     background-color: #ebebeb;
 }
 
-.social .twit:before,
-.fb:before,
-.in:before,
-.google:before,
-.youtube:before {
-    content: "\f099";
-    display: block;
-    -webkit-background-size: cover;
-    background-size: cover;
+.fa-twitter,
+.fa-facebook-f,
+.fa-linkedin-in,
+.fa-google-plus-g,
+.fa-youtube {
     position: absolute;
     left: 12px;
     top: 11px;
-    font-family: FontAwesome;
     color: #445162;
     font-size: 20px;
-}
-
-.social .fb:before {
-    content: "\f09a";
-    left: 15px;
-}
-
-.social .in:before {
-    content: "\f0e1";
-    left: 14px;
-}
-
-.social .google:before {
-    content: "\f0d5";
-    left: 11px;
-}
-
-.social .youtube:before {
-    content: "\f167";
 }
 
 .copyright {
